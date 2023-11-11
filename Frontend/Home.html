@@ -1,0 +1,407 @@
+<!-- 
+    Integrantes do grupo:
+    João Guilherme Carvalho Novaes - aplicação do bootstrap no esqueleto da página
+    Matheus Augusto Preto Santana 
+    Nicoly Ferreira Da Silva
+    Pedro Henrique Barbosa Bolgheroni - modificação do boostrap para se adequar ao projeto, criação do menu lateral e ajustes de design
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/Home.css'>
+    <link rel="icon" href="Imagens/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>FutBoleiro</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+        <header class="p-3 text-white ">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <!-- IMPORTAÇÃO BOOTSTRAP -->
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <img class="logo" src="Imagens/Logo_AI.-removebg-preview.png" alt="">
+                  <img class="logo-nome" src="Imagens/nome(1).png" alt="">
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> <!-- MENU HEADER -->
+                  <li><a href="Jogos.html" class="nav-link px-2 text-white">Jogos</a></li>
+                  <li><a href="Times.html" class="nav-link px-2 text-white">Times</a></li>
+                  <li><a href="Campeonatos.html" class="nav-link px-2 text-white">Campeonatos</a></li>
+                  <li><a href="MeuTime.html" class="nav-link px-2 text-white">Meu Time</a></li>
+                </ul>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn color">Inscreva-se</button>
+                </div>
+              </div>
+            </div>
+          </header>
+
+
+    <main role="main" class="row">
+        <div class="col-2 bg-light esquerda" > <!-- MENU LATERAL -->
+            <h7>Últimos jogos do Brasileirão Série A</h7> 
+            <br><br>
+            <p class="data"><strong>Sáb 28/10</strong></p>
+            <br>
+            <div>
+                <img class="time-icon" src="Imagens/Palmeiras.svg" alt="" data-bs-toggle="tooltip" title="Palmeiras"> 1 X 0 <img class="time-icon" src="Imagens/bahia.svg" alt="" data-bs-toggle="tooltip" title="Bahia"><!-- data-bs-toggle="tooltip" title=" "  PARA FAZER QUE AO POSICIONAR O MOUSE SOBRE O ESCUDO DO TIME, APAREÇA O NOME-->
+            </div>
+            <br>    
+            <div>
+                <img class="time-icon" src="Imagens/America-MG.svg" alt="" data-bs-toggle="tooltip" title="América-MG"> 3 X 4 <img class="time-icon" src="Imagens/gremio.svg" alt="" data-bs-toggle="tooltip" title="Grêmio">
+            </div>
+            <br>
+            <div>
+                <img class="time-icon" src="Imagens/atletico-mg.svg" alt="" data-bs-toggle="tooltip" title="Atlético-MG"> 2 X 0 <img class="time-icon" src="Imagens/fluminense.svg" alt="" data-bs-toggle="tooltip" title="Fluminense">
+            </div>
+            <br><br>
+            <p class="data"><strong>Dom 29/10</strong></p>
+            <br>
+            <div>
+                <img class="time-icon" src="Imagens/Athletico-PR.svg" alt="" data-bs-toggle="tooltip" title="Athletico-PR"> 1 X 1 <img class="time-icon" src="Imagens/sao-paulo.svg" alt="" data-bs-toggle="tooltip" title="São Paulo">
+            </div>
+            <br>
+            <div>
+                <img class="time-icon" src="Imagens/GOIAS.svg" alt="" data-bs-toggle="tooltip" title="Goiás"> 1 X 1 <img class="time-icon" src="Imagens/vasco.svg" alt="" data-bs-toggle="tooltip" title="Vasco">
+            </div>
+            <br>
+            <div>
+                <img class="time-icon" src="Imagens/internacional.svg" alt="" data-bs-toggle="tooltip" title="Internacional"> 3 X 4 <img class="time-icon" src="Imagens/coritiba.svg" alt="" data-bs-toggle="tooltip" title="Coritiba">
+            </div>
+            <br>
+            <div>
+                <img class="time-icon" src="Imagens/Corinthians.svg" alt="" data-bs-toggle="tooltip" title="Corinthians"> 1 X 1 <img class="time-icon" src="Imagens/santos.svg" alt="" data-bs-toggle="tooltip" title="Santos">
+            </div>
+            <br>
+            <div>
+               <img class="time-icon" src="Imagens/botafogo.svg" alt="" data-bs-toggle="tooltip" title="Botafogo"> 0 X 1 <img class="time-icon" src="Imagens/Cuiaba.svg" alt="" data-bs-toggle="tooltip" title="Cuiabá"> 
+            </div>
+            <br><br>
+            <h7>Próximos jogos do Brasileirão Série A</h7>
+            <br><br>
+            <div>
+                <img class="time-icon" src="Imagens/bahia.svg" alt="" data-bs-toggle="tooltip" title="Bahia"> X <img class="time-icon" src="Imagens/fluminense.svg" alt="" data-bs-toggle="tooltip" title="Fluminense"> 
+                <p class="data">31/10 19h</p>
+            </div>
+            <br>
+            <div>
+               <img class="time-icon" src="Imagens/internacional.svg" alt="" data-bs-toggle="tooltip" title="Internacional"> X <img class="time-icon" src="Imagens/America-MG.svg" alt="" data-bs-toggle="tooltip" title="América-MG"> 
+               <p class="data">01/11 19h</p> 
+            </div>
+            <br>
+            <div>
+                <img class="time-icon" src="Imagens/Corinthians.svg" alt="" data-bs-toggle="tooltip" title="Corinthians"> X <img class="time-icon" src="Imagens/Athletico-PR.svg" alt="" data-bs-toggle="tooltip" title="Athletico-PR"> 
+                <p class="data">01/11 19h</p>  
+            </div>
+            <br>
+            <div>
+                <img class="time-icon" src="Imagens/Flamengo.svg" alt="" data-bs-toggle="tooltip" title="Flamengo"> X <img class="time-icon" src="Imagens/santos.svg" alt="" data-bs-toggle="tooltip" title="Santos"> 
+                <p class="data">01/11 20h</p> 
+            </div>
+            <br>
+            <div>
+               <img class="time-icon" src="Imagens/coritiba.svg" alt="" data-bs-toggle="tooltip" title="Coritiba"> X <img class="time-icon" src="Imagens/gremio.svg" alt="" data-bs-toggle="tooltip" title="Grêmio"> 
+               <p class="data">01/11 20h</p> 
+            </div>
+            <br>
+            <div>
+               <img class="time-icon" src="Imagens/atletico-mg.svg" alt="" data-bs-toggle="tooltip" title="Atlético-MG"> X <img class="time-icon" src="Imagens/Fortaleza.svg" alt="" data-bs-toggle="tooltip" title="Fortaleza"> 
+               <p class="data">01/11 21h30</p> 
+            </div>
+            <br>
+            <div>
+               <img class="time-icon" src="Imagens/botafogo.svg" alt="" data-bs-toggle="tooltip" title="Botafogo"> X <img class="time-icon" src="Imagens/Palmeiras.svg" alt="" data-bs-toggle="tooltip" title="Palmeiras"> 
+               <p class="data">01/11 21h30</p> 
+            </div>
+            <br>
+            <div>
+               <img class="time-icon" src="Imagens/Cuiaba.svg" alt="" data-bs-toggle="tooltip" title="Cuiabá"> X <img class="time-icon" src="Imagens/vasco.svg" alt="" data-bs-toggle="tooltip" title="Vasco"> 
+               <p class="data">02/11 17h</p> 
+            </div>
+            <br>
+            <div>
+               <img class="time-icon" src="Imagens/GOIAS.svg" alt="" data-bs-toggle="tooltip" title="Goiás"> X <img class="time-icon" src="Imagens/bragantino.svg" alt="" data-bs-toggle="tooltip" title="Bragantino"> 
+               <p class="data">02/11 18h</p> 
+            </div>
+            <br>
+            <div>
+               <img class="time-icon" src="Imagens/sao-paulo.svg" alt="" data-bs-toggle="tooltip" title="São Paulo"> X <img class="time-icon" src="Imagens/cruzeiro.svg" alt="" data-bs-toggle="tooltip" title="Cruzeiro"> 
+               <p class="data">02/11 20h</p>
+            </div>
+            <br><br>
+
+            <h7>Artilheiros do Brasileirão Série A</h7>
+            <br><br>
+            <ul class="lista-jogador">
+                <li class="nome-jogador">Tiquinho Soares <img class="time-icon" src="Imagens/botafogo.svg" alt="" data-bs-toggle="tooltip" title="Botafogo"><br> 16 gols</li>
+                <br>
+                <li class="nome-jogador">Marcos Leonardo <img class="time-icon" src="Imagens/santos.svg" alt="" data-bs-toggle="tooltip" title="Santos"><br> 13 gols</li>
+                <br>
+                <li class="nome-jogador">Paulinho <img class="time-icon" src="Imagens/atletico-mg.svg" alt="" data-bs-toggle="tooltip" title="Atlético-MG"><br> 13 gols</li>
+                <br>
+                <li class="nome-jogador">Hulk <img class="time-icon" src="Imagens/atletico-mg.svg" alt="" data-bs-toggle="tooltip" title="Atlético-MG"> <br>11 gols</li>
+                <br>
+                <li class="nome-jogador">Vitor Roque <img class="time-icon" src="Imagens/Athletico-PR.svg" alt="" data-bs-toggle="tooltip" title="Athletico-PR"><br> 11 gols</li>
+            </ul>
+            <br>
+           <p>*Atualizado em 31/10/2023</p>
+
+
+        </div>
+        
+        <!-- CARDS COM NOTÍCIAS -->
+        <div class="col-10 album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4 box-shadow">
+                          <div class="row no-gutters">
+                            <div class="col-md-12">
+                              <img class="card-img principal" src="Imagens/messi-bola-de-ouro.webp" alt="Card image cap">
+                            </div>
+                            <div class="col-md-12"> <!-- 12 PARA A NOTÍCIA PRINCIPAL OCUPAR TODO O ESPAÇO -->
+                              <div class="card-body">
+                                <h3 class="card-text">Lionel Messi ganha sua 8ª bola de ouro</h3>
+                                <p class="card-text">Nesta segunda-feira (30), foi anunciado de forma oficial a conquista de Lionel Messi da Bola de Ouro 2023. </p>
+                                <p class="card-text">Aos 36 anos, o craque que atua no Inter Miami, dos Estados Unidos, ficou com o troféu especialmente por conta de sua performance na última Copa do Mundo, no Catar, vencida pela Argentina. Messi foi o grande protagonista do torneio.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver notícia completa</button>
+                                  </div>
+                                  <small class="text-muted">5 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow card-size">
+                            <img class="card-img-top" src="Imagens/noticia1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-text">Haaland marca dois, e Manchester City vence United pela Premier League</h3>
+                                <p class="card-text">O Manchester City venceu o Manchester United por 3 a 0, neste domingo (29), em Old Trafford, em partida válida pela 10ª rodada do Campeonato Inglês (Premier League). Os gols da equipe visitante foram marcados por Erling Haaland (duas vezes) e Phil Foden, com assistência do norueguês.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver notícia completa</button>
+                                    </div>
+                                    <small class="text-muted">15 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow card-size">
+                            <img class="card-img-top" src="Imagens/halaland-bola-de-ouro.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-text">Haaland ganha Prêmio Gerd Müller</h3>
+                                <p class="card-text">O atacante norueguês Erling Haaland, do Manchester City, ganhou o prêmio Gerd Müller na cerimônia da Bola de Ouro 2023. O troféu é dado ao artilheiro da temporada por clube e seleção. </p>
+                                <p>Haaland tem 56 gols marcados por clube e seleção e é o principal artilheiro da temporada 2022/23.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver notícia completa</button>
+                                    </div>
+                                    <small class="text-muted">20 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow card-size">
+                            <img class="card-img-top" src="Imagens/abel-ferreira.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-text">Abel Ferreira aparece como astronauta para celebrar seus três anos de Palmeiras</h3>
+                                <p class="card-text">Abel Ferreira publicou em sua página no Instagram um texto sobre os três anos de trabalho no Palmeiras. Com uma montagem em que ele e seus auxiliares portugueses (João Martins, Vitor Castanheira, Carlos Martinho e Tiago Costa) estão vestidos de astronautas, tendo as bandeiras de Portugal e Brasil ao lado, o treinador celebrou o que disse ser "uma bela jornada".</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver notícia completa</button>
+                                    </div>
+                                    <small class="text-muted">20 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow card-size">
+                            <img class="card-img-top" src="Imagens/Maracana.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-text">Calendário prevê jogos de Brasil, Fluminense e Flamengo em três dias seguidos no Maracanã</h3>
+                                <p class="card-text">A nova data de Flamengo e Bragantino, 23/11, fará o Maracanã receber uma maratona de jogos no mês de novembro. O Brasil x Argentina abre a sequência no dia 21 e, no dia seguinte, o Fluminense encara o São Paulo. Essa é a primeira vez que o estádio tem a previsão de receber partidas em três dias consecutivos desde que a dupla Fla-Flu assumiu a gestão.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver notícia completa</button>
+                                    </div>
+                                    <small class="text-muted">1 hora</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow card-size">
+                            <img class="card-img-top" src="Imagens/psg.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-text">Mbappé faz golaço, PSG vence Milan e assume liderança do Grupo da Morte na Champions</h3>
+                                <p class="card-text">No equilibrado grupo F da Champions League, o PSG conseguiu importante vitória por 3 a 0 sobre o Milan, nesta quarta-feira. No Parque dos Príncipes, o Paris Saint-Germain abriu o placar aos 32 minutos, com bonito gol de Mbappé. Ainda no primeiro tempo, Dembelé faria o segundo, mas teve seu gol anulado após análise no VAR, por conta de uma falta no surgimento do lance.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver notícia completa</button>
+                                    </div>
+                                    <small class="text-muted">2 horas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow card-size">
+                            <img class="card-img-top" src="Imagens/corinthians.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-text">Corinthians fecha gestão Duilio com aproveitamento de 35,2% em clássicos</h3>
+                                <p class="card-text">O empate do Corinthians diante do Santos por 1 a 1, neste domingo, marcou o último clássico do Timão na gestão do presidente Duilio Monteiro Alves, iniciada em 2021.</p>
+                                <p>Ao longo desses três anos com Duilio, o Corinthians não teve bom desempenho diante de seus maiores rivais. Foram 35 clássicos, com oito vitórias, 13 empates e 14 derrotas, aproveitamento de 35,2%.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver notícia completa</button>
+                                    </div>
+                                    <small class="text-muted">3 horas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted ">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>FutBoleiro
+                        </h6>
+            
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 texto-footer">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Sobre Nós
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Empresa</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contato</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Suporte</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 texto-footer">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Atalhos
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Jogos</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Times</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Campeonatos</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Meu Time</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 texto-footer"    >
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Informações Legais</h6>
+                        <p>
+                            <a href="#!" class="text-reset">Sobre Nós</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Política de Privacidade</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Termos e Condições</a>
+                        </p>
+                       
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 footer" style="background-color: #585858;">
+            © 2023 FutBoleiro
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous" src="https://use.fontawesome.com/796628eb4f.js"></script>
+</body>
+
+</html>

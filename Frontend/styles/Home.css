@@ -1,0 +1,117 @@
+body {
+ 
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    width: 100%;
+    
+}
+ 
+  
+header {
+    background-color: #585858; 
+    margin-bottom: 0;
+}
+
+.logo{
+    height: 70px;
+    margin-right: 10px;
+}
+
+.logo-nome{
+    width: 100px;
+}
+ 
+
+ul{
+    margin-left: 100px;
+}
+
+.color
+{
+    background-color: #1C6DD9 !important;
+    color: white !important;
+}
+
+.footer{
+    color: white;
+}
+
+.card-size{
+    min-height: 600px;
+    max-height: 600px;
+    overflow: auto; 
+    /* LIMITAÇÃO DO TAMANHO DO CARD E CASO O CONTEÚDO ULTRAPASSE ESSE LIMITA, APARECE UMA BARRA DE SCROLL  */
+}
+
+.esquerda{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    border-right: 2px solid rgba(0, 0, 0, 0.185);
+    text-align: center;
+}
+
+.time-icon{
+    height: 35px;
+    max-width: 35px;
+}
+
+.data{
+    margin-bottom: 0px;
+}
+
+.nome-jogador{
+    text-align: left;
+}
+
+.card{
+    border-color:  #585858 !important;
+    
+}
+
+.lista-jogador{
+    list-style/* -image */: circle/* url(Imagens/bola-de-futebol.png) */;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.texto-footer{
+    text-align: center;
+}
+
+@media screen and (max-width: 1060px) {
+    main{
+        flex-direction: column;
+    }
+
+    .esquerda{
+        display: flex;
+        flex-direction: column;
+        border-right: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.185);
+        height: 400px;
+        overflow: auto;
+    }
+
+    .col-2 {
+        width: 100% !important; 
+        margin-right: 0; 
+    }
+
+    .col-10{
+        width: 100% !important; 
+        margin-right: 0; 
+    }
+    
+    .lista-jogador{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+   
+    
+
+}

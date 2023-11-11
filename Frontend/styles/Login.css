@@ -1,0 +1,201 @@
+/*So preciso alongar, tirar bordar e o botão */
+body{
+    background-color: #f8f9fa;
+}
+
+main {
+    display: flex;
+    height: 88vh;
+    width: 100vw;
+}
+
+header {
+    background-color: #585858; 
+    margin-bottom: 0;
+}
+
+.logo{
+    height: 70px;
+    margin-right: 10px;
+}
+
+.logo-nome{
+    width: 100px;
+}
+ 
+
+ul{
+    margin-left: 100px;
+}
+
+.color
+{
+    background-color: #1C6DD9 !important;
+    color: white !important;
+}
+
+.direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 40vw;
+    flex-direction: column;
+    background-color: #949393;
+}
+
+.card-direita{
+    min-height: 40% !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.esquerda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60vw;
+    background-color: #f8f9fa;     
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 75%;
+    padding: 15px;
+    align-items: center;
+    width: 45%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    overflow: auto;
+}
+
+
+h1 {
+    margin-top: 5%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h6 {
+    margin-top: 4%;
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 3%;
+    margin-top: 3%;
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 0%;
+}
+
+.campo {
+    margin-top: 3%;
+}
+
+form {
+    min-height: 90%; /*Quero q ele estique, mas não fica*/
+}
+
+.card2{
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#senha{
+    margin-bottom: 10%;
+}
+
+.btn2 {
+    font-weight: bold;
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    height: 40px;
+    border-radius: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+} 
+
+.link{
+    color: #000000;
+}
+
+.footer{
+    color: white;
+}
+
+@media screen and (max-width: 943px) {
+    main {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .direita {
+        width: 100vw;
+        height: 82vh;
+    }
+
+    .esquerda {
+        width: 100vw;
+        height: 18vh;
+    }
+
+    .logo {
+        height: auto;
+        width: auto;
+    }
+
+    form {
+        margin-top: 1%;
+        width: 80%;
+        height: 60%;
+        border: 0, 4px solid black;
+    }
+
+    .card {
+        padding: 15px;
+        flex-wrap: wrap;
+        width: 70vw;
+        height: 60vh;
+        align-items: center;
+        overflow: auto;
+    }
+
+    .form-control {
+        width: 100%;
+        height: 25px;
+
+    }
+
+    h1 {
+        font-size: 30px;
+        font-family: 'Anton', sans-serif;
+        text-align: center;
+    }
+
+    button {
+        margin-top: 7%;
+    }
+
+
+}
+@media screen and (max-width: 414px) {
+    main{
+        width: 100%;
+        height: 100vh;
+    }
+}
