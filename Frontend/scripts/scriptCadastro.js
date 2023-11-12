@@ -58,7 +58,7 @@
             }
         })
         .then(resposta => resposta.json())
-        .then(resultado => window.location.href = "lista.html")
+        .then(resultado => window.location.href = "login.html")
 
     }
 })

@@ -50,3 +50,29 @@ export const deleteUsuarios = (req, res) => {
         return res.status(200).json("Usuário deletado com sucesso!");
     })
 }
+
+export const buscarPorEmail = (req, res) => {
+    const q = "SELECT * FROM usuarios WHERE email = ?;"; 
+    const values = [req.body.email];
+
+    db.query(q, values, (error, data) => {
+        if (error) return res.json(error);
+
+        return res.status(200).json(data);
+    });
+};
+
+export const loginUsuario = (req, res) => {
+    const email = req.body.email;
+    const senha = req.body.senha;
+
+    buscarPorEmail(req, res, (error, data) => {
+        if (error) return res.json(error);
+
+        if (data.length > 0 && data[0].senha === senha) {
+            return res.status(200).json({ message: 'Login bem-sucedido' });
+        } else {
+            return res.status(401).json({ message: 'Credenciais inválidas' });
+        }
+    });
+};
