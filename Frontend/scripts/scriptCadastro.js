@@ -41,4 +41,24 @@
     }
   })
 
-  
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (form.checkValidity()) {
+        let dados = {
+            nome: document.querySelector("#nome").value,
+            email: document.querySelector("#email").value,
+            senha: senhaInput.value,
+        }
+
+        fetch("http://localhost:8000/usuario", {
+            method: "POST",
+            body: JSON.stringify(dados),
+            headers:{
+                "Content-Type": "application/json"
+            }
+        })
+        .then(resposta => resposta.json())
+        .then(resultado => window.location.href = "lista.html")
+
+    }
+})

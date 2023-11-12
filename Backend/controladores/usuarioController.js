@@ -11,11 +11,12 @@ export const getUsuarios = (req, res) => {
 }
 
 export const postUsuarios = (req, res) => {
-    const q = "INSERT INTO usuarios(`nome`, `email`) VALUES(?)";
+    const q = "INSERT INTO usuarios(`nome`, `email`, `senha`) VALUES(?)";
 
     const values = [
         req.body.nome,
-        req.body.email
+        req.body.email,
+        req.body.senha
     ]
 
     db.query(q, [values], (error) =>{
@@ -26,7 +27,7 @@ export const postUsuarios = (req, res) => {
 }
 
 export const putUsuarios = (req, res) => {
-    const q = "UPDATE usuarios SET `nome` = ?, `email` = ? WHERE `id` = ?";
+    const q = "UPDATE usuarios SET `nome` = ?, `email` = ?, `senha` = ? WHERE `id` = ?";
 
     const values = [
         req.body.nome,
