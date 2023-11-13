@@ -1,7 +1,5 @@
 body {
- 
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
+    background-color: #f8f9fa;
     width: 100%;
     
 }
@@ -9,6 +7,7 @@ body {
 header {
     background-color: #585858; 
     margin-bottom: 0;
+    
 }
 
 main {
@@ -41,17 +40,6 @@ ul{
     margin-top: 3%;
 }
 
-.btn2 {
-    margin-bottom: 8% ;
-    margin-top: 8%;
-    height: 40px;
-    font-weight: bold;
-    border-radius: 10%;
-    color: #FFFFFF;
-    background-color: #000000;
-    border: none;
-}
-
 form {
     min-height: 90%; /*Quero q ele estique, mas não fica*/
 }
@@ -82,7 +70,7 @@ label {
 .card {
     display: flex;
     flex-direction: column;
-    min-height: 60%;
+    min-height: 75%;
     padding: 15px;
     align-items: center;
     width: 45%;
@@ -98,7 +86,7 @@ label {
     align-items: center;
     height: 100%;
     width: 60vw;
-    background-color: #FFFFFF;       
+    background-color: #f8f9fa;         
 }
 
 label {
@@ -118,4 +106,59 @@ label {
 a{
     color: #000000;
     
+}
+
+.direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 40vw;
+    flex-direction: column;
+    /* background-color:  #94939398; */
+    background: linear-gradient( #94939398, #1C6DD9)
+    
+    
+}
+
+.card-direita {
+    min-height: 40% !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.363) !important;
+    align-items: center;
+    display: flex;
+    color: #FFFFFF;
+}
+
+.text-direita {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.text-direita img {
+    margin-right: 10px;
+}
+
+.text-direita h6 {
+    margin: 0; /* Remover margens padrão do h6 */
+}
+
+.btn2 {
+    font-weight: bold;
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #1C6DD9;
+    border: none;
+    height: 40px;
+    border-radius: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+} 
+
+.card2{
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
