@@ -42,13 +42,35 @@ ul{
     height: 100%;
     width: 40vw;
     flex-direction: column;
-    background-color: #949393;
+    /* background-color:  #94939398; */
+    background: linear-gradient( #94939398, #1C6DD9)
+    
+    
 }
 
-.card-direita{
+.card-direita {
     min-height: 40% !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.363) !important;
+    align-items: center;
+    display: flex;
+    color: #FFFFFF;
 }
+
+.text-direita {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.text-direita img {
+    margin-right: 10px;
+}
+
+.text-direita h6 {
+    margin: 0; /* Remover margens padrão do h6 */
+}
+
 
 .esquerda {
     display: flex;
@@ -121,7 +143,7 @@ form {
     font-weight: bold;
     width: 100%;
     color: #FFFFFF;
-    background-color: #000000;
+    background-color: #1C6DD9;
     border: none;
     height: 40px;
     border-radius: 5%;
