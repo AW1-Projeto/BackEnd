@@ -1,11 +1,11 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #D0D1D3;
     width: 100%;
     
 }
 
 header {
-    background-color: #585858; 
+    background-color: #000000; 
     margin-bottom: 0;
     
 }
@@ -31,7 +31,7 @@ ul{
 
 .color
 {
-    background-color: #1C6DD9 !important;
+    background-color: #1e975b !important;
     color: white !important;
 }
 
@@ -86,7 +86,7 @@ label {
     align-items: center;
     height: 100%;
     width: 60vw;
-    background-color: #f8f9fa;         
+    background-color:#D0D1D3;         
 }
 
 label {
@@ -117,7 +117,7 @@ a{
     width: 40vw;
     flex-direction: column;
     /* background-color:  #94939398; */
-    background: linear-gradient( #94939398, #1C6DD9)
+    background-color: #1e975b;
     
     
 }
@@ -132,9 +132,10 @@ a{
 }
 
 .text-direita {
-    display: flex;
-    margin-left: 10px;
-    align-items: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
 }
 
 .text-direita img {
@@ -145,11 +146,15 @@ a{
     margin: 0; /* Remover margens padrão do h6 */
 }
 
+.text{
+    display: flex;
+}
+
 .btn2 {
     font-weight: bold;
     width: 100%;
     color: #FFFFFF;
-    background-color: #1C6DD9;
+    background-color: #1e975b;
     border: none;
     height: 40px;
     border-radius: 5%;
@@ -161,6 +166,11 @@ a{
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer{
+    background-color: #000000 !important;
+    color: #FFFFFF;
 }
 
 @media screen and (max-width: 1173px) {
