@@ -213,6 +213,9 @@ a{
         }
     }
     @media screen and (max-width: 1000px) {
+        ul{
+            margin-left: 0;
+        }
     .logo{
         width: 10%;
         height: 10%;

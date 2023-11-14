@@ -66,13 +66,13 @@ export const loginUsuario = (req, res) => {
     const email = req.body.email;
     const senha = req.body.senha;
 
-    buscarPorEmail(req, res, (error, data) => {
-        if (error) return res.json(error);
+    const q = "SELECT * FROM usuarios WHERE email = ? AND senha = ?;";
 
-        if (data.length > 0 && data[0].senha === senha) {
-            return res.status(200).json({ message: 'Login bem-sucedido' });
-        } else {
-            return res.status(401).json({ message: 'Credenciais inválidas' });
-        }
+    db.query(q, [email, senha], (error, data) => {
+        if (error) return res.json(error);
+        if (data.length == 0)
+            return res.status(200).json(false);
+        return res.status(200).json(true);
     });
+
 };
