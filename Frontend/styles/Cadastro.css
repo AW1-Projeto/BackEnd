@@ -162,3 +162,56 @@ a{
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (max-width: 1173px) {
+  
+    .card{
+        width: 60%;
+    }
+    
+    .card-direita{
+        display: none;
+    }
+    
+    .direita{
+        display: none;
+    }
+        
+    main{
+        justify-content: center;
+    }
+    }
+    
+    @media screen and (max-width: 883px) {
+        .card{
+            width: 80%
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .sobre-nos{
+            display: none !important;
+        }
+        .atalhos{
+            display: none !important;
+        }
+        .links{
+            display: none !important;
+        }
+        .card{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+    .logo{
+        width: 10%;
+        height: 10%;
+    }
+    .logo-nome{
+        width: 10%;
+        height: 10%;
+    }
+    .btn-header{
+        
+    }
+    }
