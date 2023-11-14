@@ -159,65 +159,55 @@ form {
     color: white;
 }
 
-@media screen and (max-width: 943px) {
-    main {
-        width: 100vw;
-        height: 100vh;
-        flex-direction: column;
-    }
-
-    .direita {
-        width: 100vw;
-        height: 82vh;
-    }
-
-    .esquerda {
-        width: 100vw;
-        height: 18vh;
-    }
-
-    .logo {
-        height: auto;
-        width: auto;
-    }
-
-    form {
-        margin-top: 1%;
-        width: 80%;
-        height: 60%;
-        border: 0, 4px solid black;
-    }
-
-    .card {
-        padding: 15px;
-        flex-wrap: wrap;
-        width: 70vw;
-        height: 60vh;
-        align-items: center;
-        overflow: auto;
-    }
-
-    .form-control {
-        width: 100%;
-        height: 25px;
-
-    }
-
-    h1 {
-        font-size: 30px;
-        font-family: 'Anton', sans-serif;
-        text-align: center;
-    }
-
-    button {
-        margin-top: 7%;
-    }
-
-
+@media screen and (max-width: 1173px) {
+  
+.card{
+    width: 60%;
 }
-@media screen and (max-width: 414px) {
-    main{
-        width: 100%;
-        height: 100vh;
+
+.card-direita{
+    display: none;
+}
+
+.direita{
+    display: none;
+}
+    
+main{
+    justify-content: center;
+}
+}
+
+@media screen and (max-width: 883px) {
+    .card{
+        width: 80%
     }
+}
+
+@media screen and (max-width: 800px) {
+    .sobre-nos{
+        display: none !important;
+    }
+    .atalhos{
+        display: none !important;
+    }
+    .links{
+        display: none !important;
+    }
+    .card{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+.logo{
+    width: 10%;
+    height: 10%;
+}
+.logo-nome{
+    width: 10%;
+    height: 10%;
+}
+.btn-header{
+    
+}
 }
