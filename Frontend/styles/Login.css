@@ -1,6 +1,6 @@
 /*So preciso alongar, tirar bordar e o botão */
 body{
-    background-color: #f8f9fa;
+    background-color: #d0d1d3;
 }
 
 main {
@@ -10,7 +10,7 @@ main {
 }
 
 header {
-    background-color: #585858; 
+    background-color: #000000; 
     margin-bottom: 0;
 }
 
@@ -30,8 +30,8 @@ ul{
 
 .color
 {
-    background-color: #1C6DD9 !important;
-    color: white !important;
+    background-color: #1e975b !important;
+    color: #FFFFFF !important;
 }
 
 .direita {
@@ -43,8 +43,7 @@ ul{
     width: 40vw;
     flex-direction: column;
     /* background-color:  #94939398; */
-    background: linear-gradient( #94939398, #1C6DD9)
-    
+    background-color:#1e975b
     
 }
 
@@ -58,9 +57,10 @@ ul{
 }
 
 .text-direita {
-    display: flex;
-    margin-left: 10px;
-    align-items: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
 }
 
 .text-direita img {
@@ -78,7 +78,7 @@ ul{
     align-items: center;
     height: 100%;
     width: 60vw;
-    background-color: #f8f9fa;     
+    background-color: #d0d1d3;     
 }
 
 .card {
@@ -143,7 +143,7 @@ form {
     font-weight: bold;
     width: 100%;
     color: #FFFFFF;
-    background-color: #1C6DD9;
+    background-color: #1e975b;
     border: none;
     height: 40px;
     border-radius: 5%;
@@ -210,4 +210,8 @@ main{
 .btn-header{
     
 }
+}
+
+.links {
+    background-color: #d0d1d3;
 }
