@@ -1,14 +1,14 @@
 body {
  
     font-family: 'Roboto', sans-serif;
-    background-color: black;
+    background-color: #d0d1d3;
     width: 100%;
     
 }
  
   
 header {
-    background-color: #585858; 
+    background-color: #000000; 
     margin-bottom: 0;
 }
 
@@ -28,7 +28,7 @@ ul{
 
 .color
 {
-    background-color: #1C6DD9 !important;
+    background-color: #1e975b !important;
     color: white !important;
 }
 
