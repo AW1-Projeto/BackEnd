@@ -76,7 +76,7 @@ label {
     width: 45%;
     box-sizing: border-box;
     border-radius: 50px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     overflow: auto;
 }
 
@@ -128,7 +128,7 @@ a{
     background-color: rgba(0, 0, 0, 0.363) !important;
     align-items: center;
     display: flex;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .text-direita {
@@ -227,4 +227,9 @@ a{
     .btn-header{
         
     }
+    
+    }
+    .links {
+        background-color: #d0d1d3;
+
     }
