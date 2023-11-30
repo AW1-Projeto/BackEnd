@@ -43,7 +43,8 @@ ul{
     width: 40vw;
     flex-direction: column;
     /* background-color:  #94939398; */
-    background-color:#1e975b
+    background-color: #1e975b;
+    
     
 }
 
@@ -53,7 +54,7 @@ ul{
     background-color: rgba(0, 0, 0, 0.363) !important;
     align-items: center;
     display: flex;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .text-direita {
@@ -69,6 +70,10 @@ ul{
 
 .text-direita h6 {
     margin: 0; /* Remover margens padrão do h6 */
+}
+
+.text{
+    display: flex;
 }
 
 
